@@ -16,6 +16,15 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Header />
+              <p>Iam checkout</p>
+            </>
+          }
+        />
       </Routes>
     </div>
   );
