@@ -22,7 +22,7 @@ function Home() {
           <Product
             id="4343545"
             title="Logitech G733 K/DA Lightspeed Wireless Gaming Headset with Suspension Headband~16.8 M. Color"
-            price="199.9"
+            price={199.99}
             image="https://m.media-amazon.com/images/I/71nHaiwCHmL._AC_UL640_FMwebp_QL65_.jpg"
             alt=""
             rating={4}
