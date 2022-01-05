@@ -15,20 +15,6 @@ function Checkout() {
         />
         <div>
           <h2 className="checkout__title">Your shopping Basket</h2>
-          <CheckoutProduct
-            id="12123"
-            title="just for test"
-            image="https://m.media-amazon.com/images/I/61pMwykTQYL._SX3000_.jpg"
-            price="23.45"
-            rating={5}
-          />
-          <CheckoutProduct
-            id="12123"
-            title="just for test"
-            image="https://m.media-amazon.com/images/I/61pMwykTQYL._SX3000_.jpg"
-            price="23.45"
-            rating={5}
-          />
           {basket.map((item) => (
             <CheckoutProduct
               id={item.id}
