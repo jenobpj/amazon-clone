@@ -3,11 +3,15 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import reducer, { initialState } from "./reducer";
 import reportWebVitals from "./reportWebVitals";
+import { StateProvider } from "./Components/StateProvider";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <App />
+    </StateProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

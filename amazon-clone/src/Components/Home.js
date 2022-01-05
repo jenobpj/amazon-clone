@@ -8,6 +8,7 @@ function Home() {
         <img
           className="home__image"
           src="https://m.media-amazon.com/images/I/61pMwykTQYL._SX3000_.jpg"
+          alt=""
         />
         <div className="home__row">
           <Product
@@ -15,6 +16,7 @@ function Home() {
             title="The lean start up"
             price={29.99}
             image="https://m.media-amazon.com/images/I/81-QB7nDh4L._AC_UL640_FMwebp_QL65_.jpg"
+            alt=""
             rating={5}
           />
           <Product
@@ -22,6 +24,7 @@ function Home() {
             title="Logitech G733 K/DA Lightspeed Wireless Gaming Headset with Suspension Headband~16.8 M. Color"
             price="199.9"
             image="https://m.media-amazon.com/images/I/71nHaiwCHmL._AC_UL640_FMwebp_QL65_.jpg"
+            alt=""
             rating={4}
           />
         </div>
@@ -32,6 +35,7 @@ function Home() {
             price={199.99}
             rating={3}
             image="https://m.media-amazon.com/images/I/71TVaZublLL._AC_UL640_FMwebp_QL65_.jpg"
+            alt=""
           />
           <Product
             id="23445930"
@@ -39,6 +43,7 @@ function Home() {
             price={98.99}
             rating={5}
             image="https://m.media-amazon.com/images/I/71at+SHImkL._AC_UY436_FMwebp_QL65_.jpg"
+            alt=""
           />
           <Product
             id="3254354345"
@@ -46,6 +51,7 @@ function Home() {
             price={589.99}
             rating={4}
             image="https://m.media-amazon.com/images/I/61doEryji2S._AC_UY436_FMwebp_QL65_.jpg"
+            alt=""
           />
         </div>
         <div className="home__row">
@@ -55,6 +61,7 @@ function Home() {
             price={1094.98}
             rating={4}
             image="https://m.media-amazon.com/images/I/81gf+wgrcfS._AC_UL640_FMwebp_QL65_.jpg"
+            alt=""
           />
         </div>
       </div>
