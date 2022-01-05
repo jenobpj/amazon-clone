@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
+const signIn = (e) => {
+  e.preventDefault();
+};
+const register = (e) => {
+  e.preventDefault();
+};
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="login">
       <Link to="/">
@@ -15,19 +23,37 @@ function Login() {
 
         <form>
           <h5>E-mail</h5>
-          <input type="text" />
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
           <h5>Password</h5>
-          <input type="password" />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-          <button className="login__signinButton">Sign In</button>
+          <button
+            type="submit"
+            onClick={signIn}
+            className="login__signinButton"
+          >
+            Sign In
+          </button>
         </form>
         <p>
           By signin-in you agree to AMAZON FAKE CLONE Conditions of Use & Sale.
           Please see our Privacy Notice,Our Cookies Notice and our
           Interest-Based Ads Notice.
         </p>
-        <button className="login__registerButton">
+        <button
+          type="submit"
+          onClick={register}
+          className="login__registerButton"
+        >
           Create your Amzon Account
         </button>
       </div>
