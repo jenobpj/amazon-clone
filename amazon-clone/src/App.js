@@ -51,6 +51,15 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/payment"
+          element={
+            <>
+              <Header />
+              <Payment />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
