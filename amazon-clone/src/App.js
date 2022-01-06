@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import { Routes, Route } from "react-router-dom";
 import Checkout from "./Components/Checkout";
 import Login from "./Components/Login";
+import Payment from "./Components/Payment";
 import { auth } from "./Components/firebase";
 import { useStateValue } from "./Components/StateProvider";
 
