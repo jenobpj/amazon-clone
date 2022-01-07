@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Checkout from "./Checkout";
 import CheckoutProduct from "./CheckoutProduct";
@@ -12,9 +12,15 @@ function Payment() {
 
   const stripe = useStripe();
   const elements = useElements();
+  const [succeeded, setSucceeded] = useState(false);
+  const [processing, setProcessing] = useState("");
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
-  const handleSubmit = (e) => {};
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setProcessing(true);
+  };
   const handleChange = (event) => {
     //Listen for changes in the cardElement
     //and display any errors as the customer types their card details
@@ -69,7 +75,11 @@ function Payment() {
                   thousandSeparator={true}
                   prefix={"$"}
                 />
+                <button disabled={processing || disabled || succeeded}>
+                  <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                </button>
               </div>
+              {error && <div>{error}</div>}
             </form>
           </div>
         </div>
